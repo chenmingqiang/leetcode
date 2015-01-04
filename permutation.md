@@ -11,7 +11,7 @@
     3 2 1
 
 ### 递归方法
-从1到n的全排列可以分为n类，分别以1,2,..n 开头的全排列.
+从1到n的全排列可以分为n类，分别以1,2,..n 开头的全排列,每一类有(n-1)!个。
 
 代码如下： 
 
@@ -28,7 +28,7 @@
         }
     
        private :
-        void perm(vector<int>& ivec, int m, int n, vector<vector<int> >& permutations)
+        void perm(vector<int>& num, int m, int n, vector<vector<int> >& permutations)
         {
             if (m >= n) { 
                 permutations.push_back(num);
